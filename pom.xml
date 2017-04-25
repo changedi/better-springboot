@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>me.cloudex</groupId>
-    <artifactId>demo-service</artifactId>
+    <artifactId>better-springboot</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 
     <parent>
@@ -47,4 +47,15 @@
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
     </dependencies>
+
+
+    <build>
+        <plugins>
+            <!--创建可执行jar-->
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
 </project>
