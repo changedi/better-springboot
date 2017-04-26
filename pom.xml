@@ -13,6 +13,10 @@
         <version>1.4.1.BUILD-SNAPSHOT</version>
     </parent>
 
+    <properties>
+        <java.version>1.8</java.version>
+    </properties>
+
     <!-- Additional lines to be added here... -->
 
     <!-- (you don't need this if you are using a .RELEASE version) -->
