@@ -1,0 +1,11 @@
+--------------------------------------
+||
+||      -------           -------
+||                 ++++
+||              ${application.version}
+||            ${spring-boot.version}
+||              ${application.formatted-version}
+||              ${spring-boot.formatted-version}
+||              ${application.title}
+||              [[]][[]][[]]
+--------------------------------------
