@@ -16,7 +16,9 @@ public class Example {
     private AccountService accountService;
 
     public static void main(String[] args) throws Exception {
-        //SpringApplication.run(Example.class, args);
+        //常规方式
+        // SpringApplication.run(Example.class, args);
+        // 流式api方式
         new SpringApplicationBuilder()
             .sources(Example.class)
             .bannerMode(Banner.Mode.OFF)
