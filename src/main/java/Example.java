@@ -19,10 +19,11 @@ public class Example {
         //常规方式
         // SpringApplication.run(Example.class, args);
         // 流式api方式
+        String[] v = {"a", "b"};
         new SpringApplicationBuilder()
             .sources(Example.class)
             .bannerMode(Banner.Mode.OFF)
-            .run(args);
+            .run(v);
     }
 
     @RequestMapping("/")
