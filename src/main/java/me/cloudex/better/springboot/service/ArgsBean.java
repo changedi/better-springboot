@@ -1,5 +1,7 @@
 package me.cloudex.better.springboot.service;
 
+import java.util.Set;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.stereotype.Component;
@@ -15,8 +17,12 @@ public class ArgsBean {
         String[] argString = args.getSourceArgs();
         if (argString != null) {
             for (String a : argString) {
-                System.out.println(a);
+                System.out.println("sourceArgs:" + a);
             }
+        }
+        Set<String> optionNames = args.getOptionNames();
+        for (String option : optionNames) {
+            System.out.println("optionArgs:" + option);
         }
     }
 }
