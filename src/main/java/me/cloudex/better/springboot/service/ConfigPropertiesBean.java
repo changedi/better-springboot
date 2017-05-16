@@ -14,8 +14,12 @@ public class ConfigPropertiesBean {
     @Value("${product.name}")
     private String productName;
 
+    @Value("product.secret=${random.value}")
+    private String secret;
+
     @PostConstruct
     public void init() {
         System.out.println("ConfigPropertiesBean:" + productName);
+        System.out.println("ConfigPropertiesBean:" + secret);
     }
 }
