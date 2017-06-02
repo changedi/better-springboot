@@ -21,7 +21,7 @@ public class Example {
         //常规方式
         // SpringApplication.run(Example.class, args);
         // 流式api方式
-        String[] v = {"a", "b", "--test=true", "false"};
+        String[] v = {"a", "b", "--test=true", "false", "--spring.profiles.active=dev"};
         new SpringApplicationBuilder()
             .sources(Example.class)
             .bannerMode(Banner.Mode.OFF)
